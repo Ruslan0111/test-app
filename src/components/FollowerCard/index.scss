@@ -1,0 +1,91 @@
+.follower__card {
+  padding: 24px;
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.24), 0px 16px 32px -4px rgba(145, 158, 171, 0.24);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-left {
+    display: flex;
+    align-items: center;
+
+    &-img {
+      img {
+        display: block;
+      }
+    }
+
+    &-info {
+      margin-left: 18px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      color: #002930;
+
+      span {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #637381;
+      }
+    }
+  }
+
+  &-right {
+
+    &-btn {
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 13px;
+      line-height: 22px;
+      color: #002930;
+      padding: 4px 10px;
+      border: 1px solid rgba(145, 158, 171, 0.32);
+      border-radius: 8px;
+      background-color: transparent;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: rgba(145, 158, 171, 0.32);
+      }
+    }
+
+    &-followed {
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 22px;
+      color: #00B533;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .follower__card {
+    display: block;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-right {
+
+      margin-top: 20px;
+      text-align: center;
+
+      &-btn {
+        
+        padding: 4px 20px;
+        margin: 0 auto;
+        display: inline-block;
+      }
+    }
+  }
+}

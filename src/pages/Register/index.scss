@@ -1,0 +1,93 @@
+.registration {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .registration__form {
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.24), 0px 16px 32px -4px rgba(145, 158, 171, 0.24);
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 25px 20px 20px 20px;
+  }
+
+  h1 {
+    color: #002930;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    color: #002930;
+    font-size: 16px;
+    margin-top: 15px;
+
+    &.registration__error {
+      font-size: 15px;
+      color:red;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00B533;
+    }
+  }
+
+  input {
+    display: block;
+    padding: 8px 10px;
+    width: 90%;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 1px solid rgba(145, 158, 171, 0.32);
+    outline: none;
+    color: #002930;
+
+    &:focus {
+      border-color: rgba(145, 158, 171, 1);
+    }
+    
+    &::-webkit-input-placeholder {
+      color: #919EAB;
+      font-weight: 500;
+    }
+    &:-ms-input-placeholder { 
+      color: #919EAB;
+      font-weight: 500;
+    }
+    &::placeholder {
+      color: #919EAB;
+      font-weight: 500;
+    }
+  }
+
+  button {
+    border: 1px solid rgba(145, 158, 171, 0.32);
+    border-radius: 8px;
+    color: #002930;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 10px 35px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgba(145, 158, 171, 0.32);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .registration {
+    .registration__form {
+      width: 300px;
+    }
+  }
+}

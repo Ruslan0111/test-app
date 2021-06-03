@@ -1,0 +1,40 @@
+.main__followers {
+  margin-top: 40px;
+
+  &-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #002930;
+    margin-bottom: 24px;
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &-card {
+    flex: 0 1 calc(100% / 3 - 16px);
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 1292px) {
+  .main__followers {
+
+    &-card {
+      flex: 0 1 calc(100% / 2 - 8px);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .main__followers {
+
+    &-card {
+      flex: 0 1 100%;
+    }
+  }
+}
